@@ -1,43 +1,28 @@
-import { notFound } from "next/navigation";
-import { type ResolvingMetadata, type Metadata } from "next";
-import { ProductListByCollectionDocument } from "@/gql/graphql";
-import { executeGraphQL } from "@/lib/graphql";
+import { type Metadata } from "next";
+import { products } from "@/lib/products";
 import { ProductList } from "@/ui/components/ProductList";
 
 export const generateMetadata = async (
-	props: { params: Promise<{ slug: string; channel: string }> },
-	parent: ResolvingMetadata,
+	props: { params: Promise<{ slug: string }> },
 ): Promise<Metadata> => {
 	const params = await props.params;
-	const { collection } = await executeGraphQL(ProductListByCollectionDocument, {
-		variables: { slug: params.slug, channel: params.channel },
-		revalidate: 60,
-	});
+	const collectionName = decodeURIComponent(params.slug).replace(/-/g, " ");
 
 	return {
-		title: `${collection?.name || "Collection"} | ${collection?.seoTitle || (await parent).title?.absolute}`,
-		description:
-			collection?.seoDescription || collection?.description || collection?.seoTitle || collection?.name,
+		title: `${collectionName} | THE SUB CLUB`,
+		description: `Collection: ${collectionName}`,
 	};
 };
 
-export default async function Page(props: { params: Promise<{ slug: string; channel: string }> }) {
+export default async function Page(props: { params: Promise<{ slug: string }> }) {
 	const params = await props.params;
-	const { collection } = await executeGraphQL(ProductListByCollectionDocument, {
-		variables: { slug: params.slug, channel: params.channel },
-		revalidate: 60,
-	});
+	const name = params.slug.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase());
 
-	if (!collection || !collection.products) {
-		notFound();
-	}
-
-	const { name, products } = collection;
-
+	// For now, just show all products as a "collection"
 	return (
 		<div className="mx-auto max-w-7xl p-8 pb-16">
 			<h1 className="pb-8 text-xl font-semibold">{name}</h1>
-			<ProductList products={products.edges.map((e) => e.node)} />
+			<ProductList products={products} />
 		</div>
 	);
 }
