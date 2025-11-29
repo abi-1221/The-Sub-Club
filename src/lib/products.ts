@@ -21,6 +21,8 @@ export interface Product {
     canUseInAppUI?: boolean;
     brandNotes?: string;
     officialWebsite?: string;
+    uses?: string[];
+    features?: string[];
 }
 
 const images = {
@@ -48,7 +50,9 @@ export const products: Product[] = [
         logoUrl: "/logos/beautiful-ai.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.beautiful.ai"
+        officialWebsite: "https://www.beautiful.ai",
+        uses: ["Pitch Decks", "Marketing Reports", "Sales Proposals", "Educational Slides"],
+        features: ["Smart Slide Templates", "Auto-formatting", "Brand Consistency", "Millions of Stock Photos"]
     },
     {
         id: "perplexity-pro-1y",
@@ -63,7 +67,9 @@ export const products: Product[] = [
         logoUrl: "/logos/perplexity.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.perplexity.ai"
+        officialWebsite: "https://www.perplexity.ai",
+        uses: ["Academic Research", "Fact Checking", "Coding Assistance", "Daily Information"],
+        features: ["Real-time Web Search", "Source Citations", "Copilot Mode", "File Upload Analysis"]
     },
     {
         id: "chatgpt-plus-1m",
@@ -78,7 +84,9 @@ export const products: Product[] = [
         logoUrl: "/logos/chatgpt.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://openai.com"
+        officialWebsite: "https://openai.com",
+        uses: ["Content Writing", "Coding & Debugging", "Language Translation", "Creative Brainstorming"],
+        features: ["GPT-4 Access", "DALL·E 3 Image Generation", "Advanced Data Analysis", "Browsing Capability"]
     },
     {
         id: "autodesk-1y",
