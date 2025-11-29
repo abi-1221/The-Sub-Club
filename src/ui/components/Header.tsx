@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Nav } from "./nav/Nav";
 
-export function Header({ channel }: { channel: string }) {
+export function Header({ channel, cart }: { channel: string; cart: ReactNode }) {
 	const [isScrolled, setIsScrolled] = useState(false);
 
 	useEffect(() => {
@@ -37,7 +37,7 @@ export function Header({ channel }: { channel: string }) {
 
 						{/* Right: Nav Actions & Search */}
 						<div className="w-full">
-							<Nav channel={channel} isScrolled={isScrolled} />
+							<Nav channel={channel} isScrolled={isScrolled} cart={cart} />
 						</div>
 					</div>
 				</div>
