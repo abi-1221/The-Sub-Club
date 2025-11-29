@@ -1,10 +1,9 @@
 import { Suspense, type ReactNode } from "react";
-import { UserMenuContainer } from "./components/UserMenu/UserMenuContainer";
 import { NavLinks } from "./components/NavLinks";
 import { MobileMenu } from "./components/MobileMenu";
 import { SearchBar } from "./components/SearchBar";
 
-export const Nav = ({ channel, isScrolled, cart }: { channel: string; isScrolled: boolean; cart: ReactNode }) => {
+export const Nav = ({ channel, isScrolled, cart, userMenu }: { channel: string; isScrolled: boolean; cart: ReactNode; userMenu: ReactNode }) => {
 	return (
 		<nav className="relative flex w-full items-center justify-between" aria-label="Main navigation">
 
@@ -36,7 +35,7 @@ export const Nav = ({ channel, isScrolled, cart }: { channel: string; isScrolled
 				</div>
 
 				<Suspense fallback={<div className="w-8" />}>
-					<UserMenuContainer />
+					{userMenu}
 				</Suspense>
 				<Suspense fallback={<div className="w-6" />}>
 					{cart}

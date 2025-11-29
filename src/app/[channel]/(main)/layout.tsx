@@ -8,6 +8,7 @@ export const metadata = {
 };
 
 import { CartNavItem } from "@/ui/components/nav/components/CartNavItem";
+import { UserMenuContainer } from "@/ui/components/nav/components/UserMenu/UserMenuContainer";
 
 export default async function RootLayout(props: {
 	children: ReactNode;
@@ -17,7 +18,11 @@ export default async function RootLayout(props: {
 
 	return (
 		<>
-			<Header channel={channel} cart={<CartNavItem channel={channel} />} />
+			<Header
+				channel={channel}
+				cart={<CartNavItem channel={channel} />}
+				userMenu={<UserMenuContainer />}
+			/>
 			<div className="flex min-h-[calc(100dvh-64px)] flex-col">
 				<main className="flex-1">{props.children}</main>
 				<Footer channel={channel} />
