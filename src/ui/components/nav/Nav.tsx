@@ -22,7 +22,7 @@ export const Nav = ({ channel, isScrolled, cart }: { channel: string; isScrolled
 			</div>
 
 			{/* Center: Search Bar (Dynamic Position) */}
-			<div className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out ${isScrolled ? "top-1/2 -translate-y-1/2 opacity-0 pointer-events-none" : "top-[140%] w-full max-w-md opacity-100"}`}>
+			<div className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out ${isScrolled ? "top-1/2 -translate-y-1/2 opacity-0 invisible" : "top-[140%] w-full max-w-md opacity-100 visible"}`}>
 				<div className="w-full">
 					<SearchBar channel={channel} />
 				</div>
@@ -31,7 +31,7 @@ export const Nav = ({ channel, isScrolled, cart }: { channel: string; isScrolled
 			{/* Right: Actions (Search, Profile, Cart) */}
 			<div className="flex-1 flex items-center justify-end gap-4 lg:gap-6">
 				{/* Search Bar in Header (Visible only when scrolled) */}
-				<div className={`hidden lg:block w-64 transition-all duration-500 ${isScrolled ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"}`}>
+				<div className={`hidden lg:block w-64 transition-all duration-500 ${isScrolled ? "opacity-100 translate-y-0 visible" : "opacity-0 -translate-y-4 invisible"}`}>
 					<SearchBar channel={channel} />
 				</div>
 
