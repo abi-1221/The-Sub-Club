@@ -101,7 +101,9 @@ export const products: Product[] = [
         logoUrl: "/logos/autodesk.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.autodesk.com"
+        officialWebsite: "https://www.autodesk.com",
+        uses: ["3D Modeling", "Architectural Design", "Engineering Simulation", "Animation"],
+        features: ["AutoCAD Access", "Revit & Maya", "Cloud Rendering", "Collaboration Tools"]
     },
     {
         id: "ilovepdf-1y",
@@ -116,7 +118,9 @@ export const products: Product[] = [
         logoUrl: "/logos/ilovepdf.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.ilovepdf.com"
+        officialWebsite: "https://www.ilovepdf.com",
+        uses: ["PDF Conversion", "Merging & Splitting", "Compressing PDFs", "Signing Documents"],
+        features: ["OCR Technology", "Batch Processing", "Secure Encryption", "Mobile App Access"]
     },
     {
         id: "adobe-creative-cloud-4m",
@@ -131,7 +135,9 @@ export const products: Product[] = [
         logoUrl: "/logos/adobe-creative-cloud.jpg",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.adobe.com/creativecloud.html"
+        officialWebsite: "https://www.adobe.com/creativecloud.html",
+        uses: ["Graphic Design", "Video Editing", "Photography", "UX/UI Design"],
+        features: ["20+ Apps (Photoshop, Illustrator)", "Adobe Fonts", "Cloud Storage", "Behance Integration"]
     },
     {
         id: "adobe-creative-cloud-1y",
@@ -146,7 +152,9 @@ export const products: Product[] = [
         logoUrl: "/logos/adobe-creative-cloud.jpg",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.adobe.com/creativecloud.html"
+        officialWebsite: "https://www.adobe.com/creativecloud.html",
+        uses: ["Graphic Design", "Video Editing", "Photography", "UX/UI Design"],
+        features: ["20+ Apps (Photoshop, Illustrator)", "Adobe Fonts", "Cloud Storage", "Behance Integration"]
     },
     {
         id: "coursera-1y",
@@ -161,7 +169,9 @@ export const products: Product[] = [
         logoUrl: "/logos/coursera.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.coursera.org"
+        officialWebsite: "https://www.coursera.org",
+        uses: ["Professional Certificates", "Degree Programs", "Skill Acquisition", "Career Advancement"],
+        features: ["Top University Partners", "Flexible Learning", "Offline Mode", "Verified Certificates"]
     },
     {
         id: "granola-business-1y",
@@ -176,7 +186,9 @@ export const products: Product[] = [
         logoUrl: "/logos/granola.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://granola.so"
+        officialWebsite: "https://granola.so",
+        uses: ["Meeting Notes", "Action Item Tracking", "Team Alignment", "Interview Recaps"],
+        features: ["AI Summaries", "Custom Templates", "Shareable Links", "Calendar Integration"]
     },
     {
         id: "linear-business-1y",
@@ -191,7 +203,9 @@ export const products: Product[] = [
         logoUrl: "/logos/linear.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://linear.app"
+        officialWebsite: "https://linear.app",
+        uses: ["Issue Tracking", "Sprint Planning", "Product Roadmaps", "Bug Reporting"],
+        features: ["Keyboard-First Design", "Git Integration", "Automated Workflows", "Real-time Sync"]
     },
     {
         id: "superhuman-starter-1y",
@@ -206,7 +220,9 @@ export const products: Product[] = [
         logoUrl: "/logos/superhuman.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://superhuman.com"
+        officialWebsite: "https://superhuman.com",
+        uses: ["Email Efficiency", "Inbox Zero", "Sales Outreach", "Team Communication"],
+        features: ["Split Inbox", "AI Composing", "Read Statuses", "Undo Send"]
     },
     {
         id: "notion-6m",
@@ -221,7 +237,9 @@ export const products: Product[] = [
         logoUrl: "/logos/notion.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.notion.so"
+        officialWebsite: "https://www.notion.so",
+        uses: ["Knowledge Management", "Project Tracking", "Documentation", "Personal Organization"],
+        features: ["Custom Databases", "AI Writer", "Team Spaces", "Template Gallery"]
     },
     {
         id: "raycast-pro-1y",
@@ -236,7 +254,9 @@ export const products: Product[] = [
         logoUrl: "/logos/raycast.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.raycast.com"
+        officialWebsite: "https://www.raycast.com",
+        uses: ["System Control", "Clipboard History", "Window Management", "Script Execution"],
+        features: ["AI Chat", "Custom Extensions", "Cloud Sync", "Themes"]
     },
     {
         id: "chatprd-pro-1y",
@@ -251,7 +271,9 @@ export const products: Product[] = [
         logoUrl: "/logos/chatprd.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.chatprd.ai"
+        officialWebsite: "https://www.chatprd.ai",
+        uses: ["PRD Writing", "Feature Specifying", "User Story Generation", "Product Strategy"],
+        features: ["Templates", "AI Co-pilot", "Export to Notion/Jira", "Context Awareness"]
     },
     {
         id: "magic-patterns-hobby-1y",
@@ -266,7 +288,9 @@ export const products: Product[] = [
         logoUrl: "/logos/magic-patterns.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.magicpatterns.com"
+        officialWebsite: "https://www.magicpatterns.com",
+        uses: ["UI Prototyping", "Component Generation", "Design Inspiration", "Frontend Code"],
+        features: ["React/Tailwind Export", "Dark Mode Support", "Component Library", "AI Iteration"]
     },
     {
         id: "mobbin-pro-1y",
@@ -281,7 +305,9 @@ export const products: Product[] = [
         logoUrl: "/logos/mobbin.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://mobbin.com"
+        officialWebsite: "https://mobbin.com",
+        uses: ["UX Research", "Competitor Analysis", "Design Patterns", "Flow Visualization"],
+        features: ["iOS/Android/Web Filters", "Flow Diagrams", "Copy Text", "Save Collections"]
     },
     {
         id: "elevenlabs-3m",
@@ -296,7 +322,9 @@ export const products: Product[] = [
         logoUrl: "/logos/elevenlabs.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://elevenlabs.io"
+        officialWebsite: "https://elevenlabs.io",
+        uses: ["Audiobooks", "Video Dubbing", "Game Characters", "Accessibility"],
+        features: ["Voice Cloning", "Text-to-Speech", "Multi-language", "Emotion Control"]
     },
     {
         id: "lumion-pro-1y",
@@ -311,7 +339,9 @@ export const products: Product[] = [
         logoUrl: "/logos/lumion.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://lumion.com"
+        officialWebsite: "https://lumion.com",
+        uses: ["Architectural Visualization", "Landscape Design", "Interior Rendering", "Walkthroughs"],
+        features: ["Real-time Rendering", "Content Library", "LiveSync", "Atmospheric Effects"]
     },
     {
         id: "jetbrains-1y",
@@ -326,7 +356,9 @@ export const products: Product[] = [
         logoUrl: "/logos/jetbrains.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.jetbrains.com"
+        officialWebsite: "https://www.jetbrains.com",
+        uses: ["Software Development", "Code Analysis", "Refactoring", "Debugging"],
+        features: ["IntelliJ IDEA", "PyCharm", "WebStorm", "Remote Development"]
     },
     {
         id: "make-1y",
@@ -341,7 +373,9 @@ export const products: Product[] = [
         logoUrl: "/logos/make.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.make.com"
+        officialWebsite: "https://www.make.com",
+        uses: ["Workflow Automation", "Data Sync", "App Integration", "Social Media Posting"],
+        features: ["Visual Builder", "1000+ Apps", "Webhooks", "Error Handling"]
     },
     {
         id: "bolt-pro-1y",
@@ -356,7 +390,9 @@ export const products: Product[] = [
         logoUrl: "/logos/bolt.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://bolt.new"
+        officialWebsite: "https://bolt.new",
+        uses: ["Task Management", "Quick Capture", "Daily Planning", "Focus Work"],
+        features: ["Keyboard Shortcuts", "Natural Language", "Dark Mode", "Cross-platform"]
     },
     {
         id: "wispr-flow-pro-1y",
@@ -371,7 +407,9 @@ export const products: Product[] = [
         logoUrl: "/logos/wispr-flow.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.wispr.ai"
+        officialWebsite: "https://www.wispr.ai",
+        uses: ["Dictation", "Note Taking", "Email Drafting", "Thought Capture"],
+        features: ["Auto-formatting", "Style Adaptation", "Multi-language", "Instant Sync"]
     },
     {
         id: "devine-core-1y",
@@ -386,7 +424,9 @@ export const products: Product[] = [
         logoUrl: "/logos/devine-core.jpg",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://devine.ai"
+        officialWebsite: "https://devine.ai",
+        uses: ["Asset Generation", "Concept Art", "Texture Creation", "Marketing Visuals"],
+        features: ["High Resolution", "Style Control", "Batch Generation", "Commercial Rights"]
     },
     {
         id: "lovable-pro-1y",
@@ -401,7 +441,9 @@ export const products: Product[] = [
         logoUrl: "/logos/lovable.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://lovable.dev"
+        officialWebsite: "https://lovable.dev",
+        uses: ["UI Design", "Frontend Development", "Prototyping", "Design Systems"],
+        features: ["AI Design Assistant", "Code Export", "Component Library", "Responsive Layouts"]
     },
     {
         id: "replit-core-1y",
@@ -416,7 +458,9 @@ export const products: Product[] = [
         logoUrl: "/logos/replit.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://replit.com"
+        officialWebsite: "https://replit.com",
+        uses: ["Coding in Browser", "Hosting Apps", "Collaborative Coding", "Learning Python/JS"],
+        features: ["Ghostwriter AI", "Private Repls", "Always-on Boosts", "Multiplayer Editing"]
     },
     {
         id: "n8n-cloud-starter-1y",
@@ -431,7 +475,9 @@ export const products: Product[] = [
         logoUrl: "/logos/n8n.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://n8n.io"
+        officialWebsite: "https://n8n.io",
+        uses: ["Complex Automations", "Data Processing", "API Integration", "Self-hosted Logic"],
+        features: ["Workflow Editor", "JavaScript Functions", "200+ Nodes", "Execution Log"]
     },
     {
         id: "descript-creator-1y",
@@ -446,7 +492,9 @@ export const products: Product[] = [
         logoUrl: "/logos/descript.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.descript.com"
+        officialWebsite: "https://www.descript.com",
+        uses: ["Podcast Editing", "Video Transcription", "Screen Recording", "Social Clips"],
+        features: ["Overdub", "Studio Sound", "Text-based Editing", "Filler Word Removal"]
     },
     {
         id: "warp-pro-1y",
@@ -461,7 +509,9 @@ export const products: Product[] = [
         logoUrl: "/logos/warp.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.warp.dev"
+        officialWebsite: "https://www.warp.dev",
+        uses: ["Command Line", "DevOps", "Scripting", "Server Management"],
+        features: ["AI Command Search", "Shared Workflows", "Block-based Output", "Themes"]
     },
     {
         id: "gamma-pro-1y",
@@ -476,7 +526,9 @@ export const products: Product[] = [
         logoUrl: "/logos/gamma.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://gamma.app"
+        officialWebsite: "https://gamma.app",
+        uses: ["Presentation Decks", "Documents", "Webpages", "Client Proposals"],
+        features: ["One-click Polish", "Embed Content", "Analytics", "PDF Export"]
     },
     {
         id: "picsart-pro-1y",
@@ -491,7 +543,9 @@ export const products: Product[] = [
         logoUrl: "/logos/picsart.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://picsart.com"
+        officialWebsite: "https://picsart.com",
+        uses: ["Photo Editing", "Collage Making", "Social Media Graphics", "Video Editing"],
+        features: ["Background Remover", "AI Image Gen", "Premium Fonts", "Templates"]
     },
     {
         id: "grammarly-pro-1y",
@@ -506,7 +560,9 @@ export const products: Product[] = [
         logoUrl: "/logos/grammarly.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.grammarly.com"
+        officialWebsite: "https://www.grammarly.com",
+        uses: ["Proofreading", "Tone Adjustment", "Plagiarism Check", "Email Writing"],
+        features: ["Advanced Suggestions", "Rewrite for Clarity", "Style Guide", "Snippet Library"]
     },
     {
         id: "freepik-premium-1y",
@@ -521,7 +577,9 @@ export const products: Product[] = [
         logoUrl: "/logos/freepik.png",
         canUseInAppUI: true,
         brandNotes: "Official logo uploaded by user.",
-        officialWebsite: "https://www.freepik.com"
+        officialWebsite: "https://www.freepik.com",
+        uses: ["Graphic Design", "Marketing Materials", "Web Design", "Social Media"],
+        features: ["Vectors & PSDs", "Stock Photos", "No Attribution", "Daily Downloads"]
     },
     {
         id: "envato-elements-1y",
@@ -534,7 +592,9 @@ export const products: Product[] = [
         shortDescription: "Unlimited creative assets: templates, stock and more.",
         thumbnail: { url: images.design, alt: "Creative assets" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Web Design", "Video Production", "Graphic Design", "Audio Production"],
+        features: ["Unlimited Downloads", "Stock Video & Audio", "WordPress Themes", "3D Objects"]
     },
     {
         id: "flutterflow-1y",
@@ -547,7 +607,9 @@ export const products: Product[] = [
         shortDescription: "Build Flutter apps visually without deep coding.",
         thumbnail: { url: images.code, alt: "App builder" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Mobile App Dev", "Prototyping", "MVP Building", "Cross-platform Apps"],
+        features: ["Visual Builder", "Firebase Integration", "Code Export", "Custom Actions"]
     },
     {
         id: "adobe-express-1y",
@@ -560,7 +622,9 @@ export const products: Product[] = [
         shortDescription: "Create quick graphics, posts and short videos easily.",
         thumbnail: { url: images.design, alt: "Social media design" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Social Media Posts", "Flyers & Posters", "Basic Video Editing", "Logo Design"],
+        features: ["Thousands of Templates", "Adobe Stock Photos", "Remove Background", "Brand Kits"]
     },
     {
         id: "wedflow-1y",
@@ -573,7 +637,9 @@ export const products: Product[] = [
         shortDescription: "Wedding planning and design software.",
         thumbnail: { url: images.design, alt: "Wedding planning" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Wedding Planning", "Guest Management", "Vendor Coordination", "Budget Tracking"],
+        features: ["Timeline Builder", "Seating Charts", "RSVP Tracking", "Collaboration Tools"]
     },
     {
         id: "edx-enterprises-1y",
@@ -586,7 +652,9 @@ export const products: Product[] = [
         shortDescription: "Enterprise-grade learning for teams.",
         thumbnail: { url: images.learning, alt: "Enterprise learning" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Employee Training", "Skill Development", "Leadership Training", "Compliance"],
+        features: ["Top University Courses", "Analytics Dashboard", "Custom Learning Paths", "Certificates"]
     },
     {
         id: "invideo-studio-3y",
@@ -599,7 +667,9 @@ export const products: Product[] = [
         shortDescription: "Template‑based video creation for social and ads.",
         thumbnail: { url: images.video, alt: "Video templates" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Promo Videos", "Social Media Ads", "YouTube Intros", "Video Presentations"],
+        features: ["5000+ Templates", "Stock Media Library", "Text-to-Video", "Voiceovers"]
     },
     {
         id: "capcut-pro-6m",
@@ -612,7 +682,9 @@ export const products: Product[] = [
         shortDescription: "Advanced tools for Reels, Shorts and TikToks.",
         thumbnail: { url: images.video, alt: "Mobile video editor" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["TikTok/Reels Editing", "Vlogging", "Video Effects", "Color Grading"],
+        features: ["Keyframe Animation", "Auto Captions", "Background Removal", "Trending Effects"]
     },
     {
         id: "linkedin-career-3m",
@@ -625,7 +697,9 @@ export const products: Product[] = [
         shortDescription: "See who viewed your profile and unlock job insights.",
         thumbnail: { url: images.business, alt: "Career insights" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Job Hunting", "Networking", "Skill Building", "Salary Research"],
+        features: ["InMail Credits", "Who Viewed Your Profile", "Applicant Insights", "Learning Courses"]
     },
     {
         id: "linkedin-business-3m",
@@ -638,7 +712,9 @@ export const products: Product[] = [
         shortDescription: "Grow your network and reach with business tools.",
         thumbnail: { url: images.business, alt: "Business networking" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Lead Generation", "Talent Scouting", "Business Insights", "Company Research"],
+        features: ["Unlimited People Browsing", "Business Insights", "15 InMails/mo", "Online Video Courses"]
     },
     {
         id: "linkedin-ads-10k",
@@ -651,7 +727,9 @@ export const products: Product[] = [
         shortDescription: "Ad credits to boost your LinkedIn campaigns.",
         thumbnail: { url: images.business, alt: "Ad analytics" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["B2B Marketing", "Brand Awareness", "Lead Gen Campaigns", "Recruitment Ads"],
+        features: ["Sponsored Content", "Message Ads", "Audience Targeting", "Conversion Tracking"]
     },
     {
         id: "canva-pro-1m",
@@ -664,7 +742,9 @@ export const products: Product[] = [
         shortDescription: "Drag‑and‑drop design tool with premium templates.",
         thumbnail: { url: images.design, alt: "Design templates" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Graphic Design", "Presentations", "Social Media Content", "Print Materials"],
+        features: ["Brand Kit", "Magic Resize", "Background Remover", "Premium Content"]
     },
     {
         id: "filmora-pro-lifetime",
@@ -677,7 +757,9 @@ export const products: Product[] = [
         shortDescription: "Video editing with a lifetime license, no renewal.",
         thumbnail: { url: images.video, alt: "Video editor timeline" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["YouTube Videos", "Tutorials", "Vlogs", "Short Films"],
+        features: ["Advanced Color Tuning", "Audio Ducking", "Motion Tracking", "Split Screen"]
     },
     {
         id: "pngtree-lifetime",
@@ -690,7 +772,9 @@ export const products: Product[] = [
         shortDescription: "Millions of PNG images, backgrounds and vectors.",
         thumbnail: { url: images.design, alt: "PNG assets" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Graphic Design", "Web Banners", "Presentations", "Marketing Art"],
+        features: ["Millions of PNGs", "Vectors & PSDs", "Backgrounds", "Commercial License"]
     },
     {
         id: "pikbest-lifetime",
@@ -703,7 +787,9 @@ export const products: Product[] = [
         shortDescription: "Templates for presentations, posters and more.",
         thumbnail: { url: images.design, alt: "Presentation templates" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Poster Design", "PowerPoint Templates", "Sound Effects", "Video Templates"],
+        features: ["Daily Updates", "Commercial Usage", "Source Files", "Multi-category"]
     },
     {
         id: "microsoft-office-365-lifetime",
@@ -716,7 +802,9 @@ export const products: Product[] = [
         shortDescription: "Word, Excel, PowerPoint and more in one license.",
         thumbnail: { url: images.productivity, alt: "Office suite" },
         logoUrl: null,
-        canUseInAppUI: false
+        canUseInAppUI: false,
+        uses: ["Document Creation", "Spreadsheets", "Presentations", "Email & Calendar"],
+        features: ["Word, Excel, PPT", "1TB OneDrive", "Outlook", "Teams"]
     }
 ];
 
