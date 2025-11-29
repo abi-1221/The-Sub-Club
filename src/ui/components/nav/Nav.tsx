@@ -21,8 +21,8 @@ export const Nav = ({ channel, isScrolled, cart }: { channel: string; isScrolled
 				</div>
 			</div>
 
-			{/* Center: Search Bar (Dynamic Position) */}
-			<div className={`absolute left-1/2 -translate-x-1/2 transition-all duration-500 ease-in-out ${isScrolled ? "top-1/2 -translate-y-1/2 opacity-0 invisible" : "top-[140%] w-full max-w-md opacity-100 visible"}`}>
+			{/* Search Bar (Dynamic Position - Right below icons) */}
+			<div className={`absolute right-0 transition-all duration-500 ease-in-out ${isScrolled ? "top-1/2 -translate-y-1/2 opacity-0 invisible" : "top-full mt-2 w-80 opacity-100 visible"}`}>
 				<div className="w-full">
 					<SearchBar channel={channel} />
 				</div>
