@@ -1,5 +1,5 @@
 import { LinkWithChannel } from "../atoms/LinkWithChannel";
-import { ProductImageWrapper } from "@/ui/atoms/ProductImageWrapper";
+import Image from "next/image";
 import { type Product } from "@/lib/products";
 
 export function ProductElement({
@@ -12,7 +12,7 @@ export function ProductElement({
 			<LinkWithChannel href={`/products/${product.slug}`} key={product.id}>
 				<div className="group relative p-4 transition-all rounded-2xl hover:bg-white/5">
 					{/* Round floating icon container with off-white matte background */}
-					<div className="aspect-square w-full overflow-hidden rounded-full bg-neutral-200 flex items-center justify-center p-8 shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg">
+					<div className="aspect-square w-full overflow-hidden rounded-full bg-neutral-200 flex items-center justify-center p-6 shadow-md transition-transform duration-300 group-hover:scale-105 group-hover:shadow-lg">
 						{product.canUseInAppUI && product.logoUrl ? (
 							<img
 								src={product.logoUrl}
@@ -21,13 +21,14 @@ export function ProductElement({
 								loading={loading}
 							/>
 						) : product.thumbnail ? (
-							<ProductImageWrapper
-								loading={loading}
+							<Image
 								src={product.thumbnail.url}
 								alt={product.thumbnail.alt}
 								width={512}
 								height={512}
-								sizes={"512px"}
+								className="h-full w-full object-contain"
+								loading={loading}
+								sizes="512px"
 								priority={priority}
 							/>
 						) : (
