@@ -16,7 +16,7 @@ export function Header({ channel, cart, userMenu }: { channel: string; cart: Rea
 	}, []);
 
 	return (
-		<header className={`sticky top-0 z-20 bg-neutral-100/95 backdrop-blur-md transition-all duration-300 ${isScrolled ? "shadow-sm" : ""}`}>
+		<header className={`sticky top-0 z-20 bg-black/20 backdrop-blur-xl border-b border-white/5 transition-all duration-300 ${isScrolled ? "shadow-lg shadow-black/10" : ""}`}>
 			<div className="mx-auto max-w-7xl px-3 sm:px-8">
 				<div className={`flex flex-col transition-all duration-300 ${isScrolled ? "h-16 justify-center" : "h-32 justify-end pb-4"}`}>
 					<div className="relative flex items-center justify-between w-full">

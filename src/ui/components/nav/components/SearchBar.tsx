@@ -29,7 +29,7 @@ export const SearchBar = ({ channel }: { channel: string }) => {
 					placeholder="Search for products..."
 					autoComplete="on"
 					required
-					className="h-10 w-full rounded-md border border-neutral-300 bg-transparent bg-white px-4 py-2 pr-10 text-sm text-black placeholder:text-neutral-500 focus:border-black focus:ring-black"
+					className="h-10 w-full rounded-md border border-white/10 bg-white/5 px-4 py-2 pr-10 text-sm text-white placeholder:text-neutral-400 focus:border-white/20 focus:ring-white/20 focus:outline-none focus:ring-1 backdrop-blur-sm transition-all"
 				/>
 			</label>
 			<div className="absolute inset-y-0 right-0">

@@ -10,9 +10,9 @@ export function ProductElement({
 	return (
 		<li data-testid="ProductElement">
 			<LinkWithChannel href={`/products/${product.slug}`} key={product.id}>
-				<div className="group relative rounded-lg border border-neutral-200 bg-white p-4 transition-shadow hover:shadow-lg">
+				<div className="group relative rounded-lg border border-white/10 bg-white/5 p-4 transition-all hover:bg-white/10 hover:shadow-lg hover:shadow-black/20 backdrop-blur-sm">
 					{/* Placeholder for image if not present, or use a default software icon */}
-					<div className="aspect-square w-full overflow-hidden rounded-md bg-neutral-100 flex items-center justify-center p-4">
+					<div className="aspect-square w-full overflow-hidden rounded-md bg-white/5 flex items-center justify-center p-4">
 						{product.canUseInAppUI && product.logoUrl ? (
 							<img
 								src={product.logoUrl}
@@ -36,13 +36,13 @@ export function ProductElement({
 					</div>
 					<div className="mt-4 flex justify-between">
 						<div>
-							<h3 className="text-sm font-semibold text-neutral-900">{product.name}</h3>
-							<p className="mt-1 text-sm text-neutral-500" data-testid="ProductElement_Category">
+							<h3 className="text-sm font-semibold text-neutral-200 group-hover:text-white transition-colors">{product.name}</h3>
+							<p className="mt-1 text-sm text-neutral-400" data-testid="ProductElement_Category">
 								{product.category}
 							</p>
-							<p className="mt-1 text-xs text-neutral-400">{product.duration}</p>
+							<p className="mt-1 text-xs text-neutral-500">{product.duration}</p>
 						</div>
-						<p className="text-sm font-medium text-neutral-900" data-testid="ProductElement_PriceRange">
+						<p className="text-sm font-medium text-neutral-200" data-testid="ProductElement_PriceRange">
 							₹{product.priceInr}
 						</p>
 					</div>
