@@ -1,6 +1,6 @@
 
 
-export const NavLinks = async () => {
+export const NavLinks = () => {
 	return (
 		<>
 		</>
